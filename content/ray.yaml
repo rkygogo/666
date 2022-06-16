@@ -38,7 +38,7 @@ inbounds:
   settings:
     password: UUID
     method: aes-256-gcm
-    network: tcp,udp
+    network: domainsocket
     ivcheck: true
   streamSettings:
     network: ws
