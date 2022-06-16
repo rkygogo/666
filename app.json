@@ -1,0 +1,18 @@
+{
+    "name": "vmvltrss",
+    "description": "vmvltrss",
+    "keywords": ["vmvltrss"],
+    "env": {
+         "PROTOCOL": {
+            "description": "Xray四合一协议共存：vless-ws、vmess-ws、trojan-ws、ss-ws",
+            "value": "path路径为（斜杠/）+（自定义UUID）+（减号-）+（对应协议开头两小写字母：vl或vm或tr或ss）",
+             "required": true
+        },
+        "UUID": {
+            "description": "请输入自定义UUID（表现为：vless-ws与vmess-ws为用户ID，trojan-ws与ss-ws为密码）",
+            "value": "",
+            "required": true
+        }  
+    },
+    "stack": "container"
+}
