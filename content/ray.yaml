@@ -37,12 +37,10 @@ inbounds:
   protocol: shadowsocks
   settings:
     password: UUID
-    method: aes-256-gcm
-    network: tcp
+    method: chacha20-ietf-poly1305
     ivcheck: true
   streamSettings:
     network: ws
-    security: none
     wsSettings:
       path: /UUID-ss
   sniffing:
