@@ -8,8 +8,12 @@
             "value": "path路径为（斜杠/）+（自定义UUID）+（减号-）+（对应协议开头两小写字母：vl或vm或tr或ss）",
              "required": true
         },
+        "SSencryption": {
+            "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
+            "value": "chacha20-ietf-poly1305"
+        },
         "UUID": {
-            "description": "请输入自定义UUID（表现为：vless-ws与vmess-ws为用户ID，trojan-ws与ss-ws为密码）",
+            "description": "请输入自定义UUID（vless-ws与vmess-ws为用户ID，trojan-ws与ss-ws为密码）",
             "value": "",
             "required": true
         }  
