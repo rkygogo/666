@@ -2,5 +2,4 @@
 
 exec 2>&1
 exec caddy run --config /workdir/Caddyfile --adapter caddyfile
-mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
-wget https://github.com/flexdinesh/dev-landing-page/archive/master.zip -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
+
