@@ -52,9 +52,3 @@ handle @websockets-ss {
 handle @websockets-tr {
         reverse_proxy * localhost:61082
 }
-
-handle {
-        reverse_proxy https://baidu.com {     
-            trusted_proxies 0.0.0.0/0
-            header_up Host {upstream_hostport}
-        }
